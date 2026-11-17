@@ -39,7 +39,7 @@ shared development VM.
 ## Layout
 
 - `main.ts` — the entry↔env lifecycle (bind an ephemeral port, register,
-  wait for done). Ships with the kit; unchanged.
+  wait for done), implemented to the wire contract the env settles.
 - `app.ts` — the HTTP router and the auth/protocol envelope.
 - `lib/gitstore.ts` — the object store, trees/commits/tags, pack read/write, deltas.
 - `lib/githttp.ts` — pkt-lines, advertisements, ls-refs, fetch planning, receive-pack.
